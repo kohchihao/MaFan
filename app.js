@@ -5,8 +5,7 @@ miio
   .device({ address: process.env.IPADDRESS, token: process.env.TOKEN })
   .then(device => {
     console.log('Connected to', device)
-    if (device.matches('type:miio:fan')) {
-      //device.setPower(true);
+    
       device.call('set_power', ['on']).then(console.log);
 
       //set direct speed 
@@ -22,6 +21,5 @@ miio
       
       //set oscillation
       //device.call('set_angle_enable', ['off']).then(console.log)
-    }
-    
+ 
   });

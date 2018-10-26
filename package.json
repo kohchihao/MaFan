@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.1.0",
-    "miio": "file:../mifanapi/miio"
+    "miio": "^0.15.6"
   }
 }
